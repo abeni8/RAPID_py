@@ -46,11 +46,16 @@ class PreProcessor():
         obs_id = pd.read_csv(obs_id_path, header=None)
         vic_data_m = pd.read_csv(vic_model_path, header=None)
         ens_data_m= pd.read_csv(ens_model_path, header=None)
-        
-        # cutoff data based on perference
+
+        # Print the first few rows of m3riv_data
+        print("First few rows of m3riv_data:")
+        print(m3riv_data.head())
+
+    
         print(f"m3riv_3hourly {m3riv_data.shape}")
         print(f"m3riv_day {m3riv_d_data.shape}")
         
+        # cutoff data based on perference
         cutoff = len(reach_id_sorted) 
         reach_id = reach_id[0:cutoff].to_numpy().flatten()
         reach_id_sorted = reach_id_sorted[0:cutoff]
@@ -78,7 +83,7 @@ class PreProcessor():
         
         ### process lateral inflow from 3-hourly to daily varaged
         lateral_daily = m3riv_data.to_numpy().reshape((self.days, 8, m3riv_data.shape[-1])).sum(axis=1)
-        lateral_daily_averaged = lateral_daily/8
+        lateral_daily_averaged = lateral_daily/8/3/60/60
         lateral_daily_averaged_sorted = np.zeros_like(lateral_daily_averaged)
         # lateral_daily_averaged = m3riv_d_data.to_numpy().reshape((self.days,m3riv_d_data.shape[-1]))
 
@@ -363,6 +368,7 @@ class PreProcessor():
         
         return P * maskP
             
-        
+
+   
     
     
