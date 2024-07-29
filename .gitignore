@@ -13,5 +13,10 @@ model_saved
 test.py
 .vscode
 __pycache__
+<<<<<<< HEAD
 convert_discharge.py
 explore_shapefile.py
+=======
+*.png
+*.jpg
+>>>>>>> 3b170c4 (Add test script, update files, and modify requirements)
