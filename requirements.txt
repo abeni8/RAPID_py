@@ -26,4 +26,8 @@ scipy==1.9.3
 seaborn==0.12.2
 =======
 seaborn==0.12.2
+<<<<<<< HEAD
 >>>>>>> 3b170c4 (Add test script, update files, and modify requirements)
+=======
+>>>>>>> visualization-testing
+>>>>>>> 11f6e37c8fab6e281f51a55fd01a2fdf9405917f
