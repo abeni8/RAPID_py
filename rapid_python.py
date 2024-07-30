@@ -103,7 +103,7 @@ class RAPIDKF():
         dis_name = 'model_saved/load_coef.pkl'
         with open(os.path.join(dir_path, dis_name), 'wb') as f:
                 pickle.dump(saved_dict, f)
-            
+
     def simulate(self):
         kf_estimation = []
         discharge_estimation = []

@@ -13,5 +13,10 @@ model_saved
 test.py
 .vscode
 __pycache__
+<<<<<<< HEAD
 convert_discharge.py
 explore_shapefile.py
+=======
+*.png
+*.jpg
+>>>>>>> visualization-testing
