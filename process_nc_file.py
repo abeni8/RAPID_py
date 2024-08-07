@@ -6,7 +6,10 @@ dataset = nc.Dataset('/Users/abeniliu/RAPID_py/rapid_data/m3_riv_San_Guad_201001
 # dataset = nc.Dataset('./rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_M_utc.nc')
 # dataset = nc.Dataset('./rapid_data/m3_riv_San_Guad_20100101_20131231_ENS0125_M_utc.nc')
 dataset = nc.Dataset('./rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_3H_utc.nc')
+<<<<<<< HEAD
 # dataset = nc.Dataset('/Users/abeniliu/RAPID_py/rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_M_utc.nc')
+=======
+>>>>>>> upstream/master
 
 # Create an empty DataFrame
 df = pd.DataFrame()
