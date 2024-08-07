@@ -5,15 +5,8 @@ import pandas as pd
 dataset = nc.Dataset('/Users/abeniliu/RAPID_py/rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_3H_utc_err_R286_D_scl.nc')
 # dataset = nc.Dataset('./rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_M_utc.nc')
 # dataset = nc.Dataset('./rapid_data/m3_riv_San_Guad_20100101_20131231_ENS0125_M_utc.nc')
-<<<<<<< HEAD
 dataset = nc.Dataset('./rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_3H_utc.nc')
-=======
 # dataset = nc.Dataset('/Users/abeniliu/RAPID_py/rapid_data/m3_riv_San_Guad_20100101_20131231_VIC0125_M_utc.nc')
-<<<<<<< HEAD
->>>>>>> 3b170c4 (Add test script, update files, and modify requirements)
-=======
->>>>>>> visualization-testing
->>>>>>> 11f6e37c8fab6e281f51a55fd01a2fdf9405917f
 
 # Create an empty DataFrame
 df = pd.DataFrame()

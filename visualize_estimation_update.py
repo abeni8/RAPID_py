@@ -55,6 +55,6 @@ for i, Qcol in enumerate(Qcols, start=1):
     sm = plt.cm.ScalarMappable(cmap=colfun, norm=norm)
     sm.set_array([])
     cbar = fig.colorbar(sm, cax=ax[1])
-    cbar.set_label("Q (cms)")
+    cbar.set_label("Magnitude of Discharge (m^3/s)")
     
     plt.show()
