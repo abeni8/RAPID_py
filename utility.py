@@ -83,11 +83,7 @@ class PreProcessor():
         
         ### process lateral inflow from 3-hourly to daily varaged
         lateral_daily = m3riv_data.to_numpy().reshape((self.days, 8, m3riv_data.shape[-1])).sum(axis=1)
-<<<<<<< HEAD
-        lateral_daily_averaged = lateral_daily/8/3/60/60
-=======
         lateral_daily_averaged = lateral_daily/8/3/3600
->>>>>>> upstream/master
         lateral_daily_averaged_sorted = np.zeros_like(lateral_daily_averaged)
         # lateral_daily_averaged = m3riv_d_data.to_numpy().reshape((self.days,m3riv_d_data.shape[-1]))
 

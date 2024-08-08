@@ -9,15 +9,11 @@ P.csv
 delta.csv
 *.pkl
 *.pyc
-model_saved*
+model_saved
 test.py
 .vscode
 __pycache__
 convert_discharge.py
-<<<<<<< HEAD
 explore_shapefile.py
 *.png
 *.jpg
-=======
-explore_shapefile.py
->>>>>>> upstream/master

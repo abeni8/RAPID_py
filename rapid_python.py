@@ -235,7 +235,7 @@ class RAPIDKF():
     
     
 if __name__ == '__main__':
-    rapid_kf = RAPIDKF(load_mode=1)
+    rapid_kf = RAPIDKF(load_mode=2)
     rapid_kf.simulate()
     k=1
     x=0.35

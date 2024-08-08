@@ -42,7 +42,7 @@ colfun = plt.cm.viridis
 lwdRamp = np.linspace(0.15, 12, 50)
 
 # Create a figure and axes
-fig, ax = plt.subplots(1, 2, figsize=(12, 10), gridspec_kw={'width_ratios': [6, 1]})
+fig, ax = plt.subplots(1, 2, figsize=(14, 10), gridspec_kw={'width_ratios': [6, 0.3], 'wspace': 0.075})
 
 # Function to update the plot
 def update(i):
@@ -58,12 +58,14 @@ def update(i):
     
     shp_sub.plot(ax=ax[0], color=colors, linewidth=lwds)
     ax[0].set_title(f"Discharge at Day {i+1}")
+    ax[0].set_xlabel('Longitude (m)')
+    ax[0].set_ylabel('Latitude (m)')
     
     # Color bar plotting
     sm = plt.cm.ScalarMappable(cmap=colfun, norm=norm)
     sm.set_array([])
-    cbar = fig.colorbar(sm, cax=ax[1])
-    cbar.set_label("Q (cms)")
+    cbar = fig.colorbar(sm, cax=ax[1], shrink=0.45, aspect=30)
+    cbar.set_label(r"Discharge (m$^3$/s)")
 
 # Create animation
 # ani = FuncAnimation(fig, update, frames=len(Qcols), repeat=False)
